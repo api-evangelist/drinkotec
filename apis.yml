@@ -1,31 +1,38 @@
 aid: drinkotec
-name: DRINKOTEC
-description: >-
-  With the DRINKOTEC application programming interface (API), you can expand the
-  functionality of DRINKOTEC with third-party application integrations. 
-type: Index
-position: Consumer
-access: 3rd-Party
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-tags:
-  - API
-created: '2025-03-01'
-modified: '2025-03-01'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
-specificationVersion: '0.19'
 apis:
   - aid: drinkotec:drinkotec
-    name: DRINKOTEC
+    name: DRINKOTEC API
+    tags:
+      - API
+    humanURL: ' https://drinkotec.ch/drinkotec-api/'
+    properties:
+      - url: ' https://drinkotec.ch/drinkotec-api/'
+        type: Documentation
     description: >-
       With the DRINKOTEC application programming interface (API), you can expand
       the functionality of DRINKOTEC with third-party application integrations. 
-    humanURL: ' https://drinkotec.ch/drinkotec-api/'
-    tags:
-      - API
-    properties:
-      - type: Documentation
-        url: ' https://drinkotec.ch/drinkotec-api/'
+name: DRINKOTEC
+tags:
+  - Beverages
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2025-03-01'
+modified: '2025-03-29'
+position: Consumer
+description: >-
+  DRINKOTEC is a beverage technology company that specializes in creating
+  innovative solutions for the production and packaging of beverages. They offer
+  a range of equipment and services designed to streamline the beverage
+  manufacturing process, from filling and sealing machines to labeling and
+  packaging solutions. DRINKOTEC also provides consulting services to help
+  companies optimize their production processes and improve efficiency. With
+  their expertise in the beverage industry, DRINKOTEC helps businesses of all
+  sizes create high-quality, cost-effective beverages that meet the demands of
+  today's consumers.
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
+specificationVersion: '0.19'
