@@ -6,9 +6,9 @@ apis:
     name: DRINKOTEC API
     tags:
       - Beverages
-    humanURL: ' https://drinkotec.ch/drinkotec-api/'
+    humanURL: 'https://drinkotec.ch/drinkotec-api/'
     properties:
-      - url: ' https://drinkotec.ch/drinkotec-api/'
+      - url: 'https://drinkotec.ch/drinkotec-api/'
         type: Documentation
     description: >-
       DRINKOTEC API is a powerful tool that enables developers to integrate various
@@ -22,7 +22,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 position: Consumer
 description: >-
   DRINKOTEC is a beverage technology company that specializes in creating innovative
