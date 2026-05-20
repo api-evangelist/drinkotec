@@ -1,6 +1,9 @@
 aid: drinkotec
 url: >-
   https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/drinkotec
 apis:
   - aid: drinkotec:drinkotec
     name: DRINKOTEC API
