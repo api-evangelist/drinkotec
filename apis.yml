@@ -2,6 +2,8 @@ aid: drinkotec
 url: >-
   https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
 common:
+  - type: DomainSecurity
+    url: security/drinkotec-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/drinkotec
 apis:
