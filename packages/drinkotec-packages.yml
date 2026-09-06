@@ -1,0 +1,51 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  Unauthenticated registry metadata queries against registry.npmjs.org, pypi.org,
+  rubygems.org, crates.io, api.nuget.org, proxy.golang.org, packagist.org and
+  search.maven.org, plus a GitHub repository search and a read of the provider's own
+  API page (https://drinkotec.ch/drinkotec-api/, via the 2026-04-19 Internet Archive
+  capture — the live URL 503s).
+provider: DRINKOTEC
+providerId: drinkotec
+package_count: 0
+packages: []
+note: >-
+  DRINKOTEC publishes NO client libraries. Searches for "drinkotec", "loop360", "bevpay"
+  and "beermax" returned zero packages on npm, PyPI, RubyGems, crates.io, NuGet,
+  pkg.go.dev and Packagist; Maven Central did not answer within the probe timeout and is
+  recorded as unchecked rather than empty. The provider's API page names no SDK, no
+  sample client and no source repository, and apis.yml carries no SDK, CLI or SourceCode
+  link to derive candidates from. A GitHub organization at https://github.com/drinkotec
+  does exist and is live (200), but it has zero public repositories and publishes no bio,
+  website or member list, so it could not be confirmed as this company's account and is
+  not wired as a pointer.
+registries_checked:
+  - registry: npm
+    query: drinkotec, loop360, bevpay, beermax
+    hits: 0
+  - registry: pypi
+    query: drinkotec, loop360
+    hits: 0
+  - registry: rubygems
+    query: drinkotec
+    hits: 0
+  - registry: crates.io
+    query: drinkotec
+    hits: 0
+  - registry: nuget
+    query: drinkotec
+    hits: 0
+  - registry: pkg.go.dev
+    query: github.com/drinkotec/
+    hits: 0
+  - registry: packagist
+    query: drinkotec
+    hits: 0
+  - registry: maven-central
+    query: drinkotec
+    hits: null
+    note: search.maven.org timed out at 20s; not checked, not confirmed empty
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

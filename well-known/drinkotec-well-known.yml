@@ -1,0 +1,134 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Live HTTPS probes of every host this record knows — the registrable domain and www,
+  the certificate-transparency-discovered API and IoT subdomains, and the HubSpot-hosted
+  content host. No apis[].baseURL and no OpenAPI servers[] host exist for this provider,
+  so the host list is the domain set plus the CT log (crt.sh) results.
+provider: DRINKOTEC
+providerId: drinkotec
+result: none
+note: >-
+  NO well-known document is served on any DRINKOTEC host. The primary site (drinkotec.ch,
+  www.drinkotec.ch) answered 503 on every path from an Infomaniak "Site en maintenance"
+  holding page — the whole origin was in maintenance at probe time, so these are not
+  document-level 404s and should be re-probed. api.drinkotec.ch and iot.drinkotec.ch
+  resolve and serve TLS but return an Infomaniak "under construction" placeholder at the
+  root and a 404 on every path. info.drinkotec.ch is a live HubSpot CMS that 404s every
+  well-known path with its HTML 404 page. Per the pipeline contract no WellKnown or
+  SecurityTxt pointer is emitted from this file: it records an absence, not a presence.
+hosts:
+  - host: drinkotec.ch
+    note: primary site; origin-wide 503 maintenance page at probe time
+    documents:
+      - path: /.well-known/security.txt
+        status: 503
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 503
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 503
+        file: null
+      - path: /.well-known/api-catalog
+        status: 503
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 503
+        file: null
+  - host: www.drinkotec.ch
+    note: same origin as drinkotec.ch; 503 maintenance page
+    documents:
+      - path: /.well-known/security.txt
+        status: 503
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 503
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 503
+        file: null
+      - path: /.well-known/api-catalog
+        status: 503
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 503
+        file: null
+  - host: api.drinkotec.ch
+    note: >-
+      Discovered in certificate transparency (crt.sh). Resolves to 128.65.195.198 and
+      serves a valid certificate, but the root returns an Infomaniak hosting placeholder
+      titled "Welcome to api.drinkotec.ch — This site is currently under construction."
+      No API is served here.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+  - host: iot.drinkotec.ch
+    note: >-
+      Discovered in certificate transparency. Same Infomaniak "under construction"
+      placeholder as api.drinkotec.ch.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+  - host: info.drinkotec.ch
+    note: >-
+      Live HubSpot-hosted content host (the DRINKOTEC blog). Returns its own HTML 404
+      page for every well-known path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+other_hosts_seen:
+  - host: support.drinkotec.ch
+    status: 503
+    note: Infomaniak maintenance page; not probed for well-known documents
+  - host: shop.drinkotec.ch
+    status: 503
+    note: Infomaniak maintenance page
+  - host: vending.drinkotec.ch
+    status: 404
+    note: bare 404 page
+  - host: ads.drinkotec.ch
+    status: 404
+    note: '"Domain has been assigned" placeholder'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,79 @@
+# DRINKOTEC
+
+> DRINKOTEC is a Swiss beverage-technology company in Nyon (Vaud) that builds connected
+> beverage dispensing hardware and the software that runs it. Its products cover postmix
+> and premix dispensers (NEO, VISION PX, DRAFTER), cocktail and blend dispensing
+> (MANHATTAN), self-service (THE WALL), contactless payment (BEVPAY), beer and wine
+> counting and control (LEVELUP, BEERMAX), automatic keg switching (KEG CHANGER), cooling
+> system monitoring (CELLAR PULSE) and water fountains (OFFINITY Series), tied together by
+> LOOP360, its cloud beverage productivity and analytics platform. It sells into breweries,
+> bars, restaurants, nightclubs, hotels, festivals, arenas, cruise ships, offices, schools
+> and healthcare.
+
+IMPORTANT — read before using this file. This is a THIRD-PARTY profile written by API
+Evangelist, not a document published by DRINKOTEC. DRINKOTEC serves no llms.txt of its own
+on any of its hosts. Everything below is a record of what was and was not found on the
+company's public surface as of 2026-09-06.
+
+## API status
+
+DRINKOTEC markets a "DRINKOTEC API" on its own site and describes it in three bullets: it
+is a RESTful API, it supports XML and JSON, and it supports OAuth2 authentication. The
+same page states that "a complete reference documentation is available and includes every
+endpoint, attribute and supported method for the most recent release of the API" — but it
+publishes no link to that documentation, and no reference could be found anywhere.
+
+There is NO publicly reachable machine-readable contract for this API. Specifically:
+
+- No OpenAPI or Swagger document at any probed location on drinkotec.ch, api.drinkotec.ch,
+  iot.drinkotec.ch or info.drinkotec.ch.
+- No GraphQL endpoint, no AsyncAPI, no WSDL, no protobuf, no Postman collection.
+- No MCP server and no A2A agent card at either well-known path.
+- No /.well-known document of any kind on any host.
+- No SDK or client library on npm, PyPI, RubyGems, crates.io, NuGet, pkg.go.dev or
+  Packagist.
+- No published pricing, plans, rate limits, changelog, status page or deprecation policy.
+- api.drinkotec.ch resolves and serves a valid TLS certificate but returns an Infomaniak
+  hosting placeholder ("This site is currently under construction") and 404s every path.
+
+Access to the API, and to the reference documentation, runs through a sales conversation:
+the only call to action on the API page is "MEET OUR SOFTWARE ENGINEERS", which links to a
+form for booking a visit or a callback at the Nyon office.
+
+At probe time on 2026-09-06 the entire drinkotec.ch origin was returning 503 behind an
+Infomaniak "Site en maintenance" holding page, so page content was read from Internet
+Archive captures of the same URLs. This is a temporary hosting state, not a decommissioned
+site — the profile should be re-probed once the origin returns.
+
+## Docs
+
+- [DRINKOTEC API](https://drinkotec.ch/drinkotec-api/): The company's only API page. Three
+  bullets on the API's shape, a claim that reference documentation exists, and a link to
+  book a meeting with the software engineering team. No reference, no spec, no base URL.
+- [LOOP360](https://drinkotec.ch/beverage-operations-app/): The beverage productivity and
+  analytics platform the API is presumed to front. Marketing page; states that LOOP360
+  integrates with ERP and CRM systems including SAP, Salesforce, HubSpot, Slack and Teams,
+  but documents no integration mechanism.
+- [POS integrations](https://drinkotec.ch/epos-systems/): Point-of-sale integration page,
+  naming Lightspeed among the supported systems.
+
+## Company
+
+- [DRINKOTEC](https://drinkotec.ch/): Company site. Chemin de la Vuarpillière 29, 1260
+  Nyon, Vaud, Switzerland. info@drinkotec.ch, +41 22 994 21 21.
+- [Blog](https://info.drinkotec.ch/en/blog): HubSpot-hosted blog, live and serving an RSS
+  feed at https://info.drinkotec.ch/en/blog/rss.xml. This is the only DRINKOTEC host that
+  was fully reachable at probe time.
+- [LinkedIn](https://www.linkedin.com/company/drinkotec)
+
+## This profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml):
+  The APIs.json index for this profile.
+- authentication/drinkotec-authentication.yml — what DRINKOTEC states about auth (OAuth2,
+  claimed only) and what it does not publish.
+- well-known/drinkotec-well-known.yml — the full well-known probe record across five hosts.
+- packages/drinkotec-packages.yml — the registry sweep; zero packages.
+- plans/drinkotec-plans-pricing.yml — zero published plans.
+- rate-limits/drinkotec-rate-limits.yml — zero published limits.
+- security/drinkotec-domain-security.yml — TLS, DNSSEC, SPF and DMARC probe results.

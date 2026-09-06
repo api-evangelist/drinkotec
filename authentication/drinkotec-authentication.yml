@@ -1,0 +1,65 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  https://drinkotec.ch/drinkotec-api/ — the provider's own API page. Live probe on
+  2026-09-06 returned 503 (origin-wide Infomaniak maintenance), so the content was read
+  from the Internet Archive capture of that same URL taken 2026-04-19
+  (http://web.archive.org/web/20260419112516id_/https://drinkotec.ch/drinkotec-api/, 200).
+provider: DRINKOTEC
+providerId: drinkotec
+documented: false
+documented_note: >-
+  DRINKOTEC does NOT publish an authentication reference. The single public statement about
+  authentication is one bullet on the API page — "supports OAuth2 authentication". There is
+  no authorization endpoint, token endpoint, grant type, scope list, client-registration
+  flow, key-issuance process or example request published anywhere on any DRINKOTEC host.
+  Because this artifact records a claim rather than documentation, NO `Authentication`
+  pointer is wired into apis.yml — emitting one would assert a reference page the provider
+  does not serve.
+claim_only: true
+schemes:
+  - id: oauth2
+    type: oauth2
+    status: claimed
+    evidence: >-
+      "The DRINKOTEC API: is a RESTful API. supports XML and JSON supports OAuth2
+      authentication" — verbatim from https://drinkotec.ch/drinkotec-api/
+    flows: unknown
+    authorization_url: null
+    token_url: null
+    scopes: []
+    scopes_documented: false
+    note: >-
+      No OAuth 2.0 metadata is discoverable. /.well-known/oauth-authorization-server and
+      /.well-known/openid-configuration return 404 on api.drinkotec.ch and iot.drinkotec.ch
+      and 503 on drinkotec.ch — see well-known/drinkotec-well-known.yml.
+media_types:
+  - application/json
+  - application/xml
+media_types_source: >-
+  "supports XML and JSON" on https://drinkotec.ch/drinkotec-api/
+key_issuance:
+  self_serve: false
+  process: >-
+    None published. The only call to action on the API page is a "MEET OUR SOFTWARE
+    ENGINEERS" button linking to https://drinkotec.ch/book-a-visit/ — a scheduling form
+    for an in-person or phone consultation at the company's Nyon (VAUD, Switzerland)
+    office. Access to the API, and to the "complete reference documentation" the page says
+    exists, runs through that conversation.
+reference_documentation:
+  claimed: true
+  claim_text: >-
+    "A complete reference documentation is available and includes every endpoint, attribute
+    and supported method for the most recent release of the API."
+  public_url: null
+  note: >-
+    The claim is made but no link, host, or path is given, and no reference was found on
+    drinkotec.ch, api.drinkotec.ch, iot.drinkotec.ch, info.drinkotec.ch, in the Internet
+    Archive's index of drinkotec.ch, or in web search. Note also that the page's own
+    heading carries a leftover HTML title attribute reading "Integrating with the
+    Lightspeed Retail API", indicating the copy was adapted from Lightspeed's API page —
+    recorded here as an observation about the source of the wording, not a claim about
+    the API itself.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
