@@ -1,47 +1,53 @@
 aid: drinkotec
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
 common:
-  - type: DomainSecurity
-    url: security/drinkotec-domain-security.yml
-  - type: LLMsTxt
-    url: llms/drinkotec-llms.txt
-  - type: Blog
-    url: 'https://info.drinkotec.ch/en/blog'
-  - type: BlogRSS
-    url: 'https://info.drinkotec.ch/en/blog/rss.xml'
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/drinkotec
+- type: Website
+  url: https://drinkotec.ch
+- type: DomainSecurity
+  url: security/drinkotec-domain-security.yml
+- type: LLMsTxt
+  url: llms/drinkotec-llms.txt
+- type: Blog
+  url: https://info.drinkotec.ch/en/blog
+- type: BlogRSS
+  url: https://info.drinkotec.ch/en/blog/rss.xml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/drinkotec
 apis:
-  - aid: drinkotec:drinkotec
-    name: DRINKOTEC API
-    tags:
-      - Beverages
-      - Beverage Dispensing
-      - Hospitality
-    humanURL: 'https://drinkotec.ch/drinkotec-api/'
-    properties:
-      - url: 'https://drinkotec.ch/drinkotec-api/'
-        type: Documentation
-    description: >-
-      The DRINKOTEC API is the integration surface for DRINKOTEC's connected beverage
-      dispensing systems and its LOOP360 beverage productivity platform, used to expand
-      DRINKOTEC functionality with third-party application integrations such as
-      point-of-sale, payment and ERP or CRM systems. DRINKOTEC describes it as a RESTful
-      API that supports XML and JSON and uses OAuth2 authentication, and states that
-      complete reference documentation covering every endpoint, attribute and supported
-      method is available — but it publishes no link to that documentation, no base URL
-      and no machine-readable contract. Access runs through the company's software
-      engineering team via its book-a-visit form.
-name: DRINKOTEC
-tags:
+- aid: drinkotec:drinkotec
+  name: DRINKOTEC API
+  tags:
   - Beverages
   - Beverage Dispensing
   - Hospitality
-  - Point of Sale
-  - IoT
-  - Analytics
-  - Payments
+  humanURL: https://drinkotec.ch/drinkotec-api/
+  properties:
+  - url: https://drinkotec.ch/drinkotec-api/
+    type: Documentation
+  description: The DRINKOTEC API is the integration surface for DRINKOTEC's connected beverage dispensing
+    systems and its LOOP360 beverage productivity platform, used to expand DRINKOTEC functionality with
+    third-party application integrations such as point-of-sale, payment and ERP or CRM systems. DRINKOTEC
+    describes it as a RESTful API that supports XML and JSON and uses OAuth2 authentication, and states
+    that complete reference documentation covering every endpoint, attribute and supported method is available
+    — but it publishes no link to that documentation, no base URL and no machine-readable contract. Access
+    runs through the company's software engineering team via its book-a-visit form.
+name: DRINKOTEC
+tags:
+- Beverages
+- Beverage Dispensing
+- Hospitality
+- Point-of-Sale
+- IoT
+- Analytics
+- Payments
+tags_raw:
+- Beverages
+- Beverage Dispensing
+- Hospitality
+- Point of Sale
+- IoT
+- Analytics
+- Payments
 type: Index
 deliveryModel:
   model: unknown
@@ -70,24 +76,21 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/drinkotec.png
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2026-09-06'
+modified: '2026-09-16'
 position: Consuming
-description: >-
-  DRINKOTEC is a Swiss beverage technology company headquartered in Nyon, Vaud, that
-  designs, builds and services connected beverage dispensing systems and the software
-  that runs them. Its hardware line covers all-in-one and modern postmix dispensers (NEO,
-  VISION PX), compact premix dispensing (DRAFTER), cocktails and blends (MANHATTAN),
-  self-service walls, contactless payment (BEVPAY), beer and wine counting and control
-  (LEVELUP, BEERMAX), automatic keg switching, cellar cooling monitoring and water
-  fountains. LOOP360, its cloud beverage productivity and analytics platform, connects
-  dispensed beverages to a central system and is marketed as integrating with ERP and CRM
-  platforms. DRINKOTEC sells into breweries, bars, pubs, nightclubs, restaurants, hotels,
-  festivals, sports arenas, cruise ships, offices, schools and healthcare, and markets a
-  RESTful DRINKOTEC API for third-party integration whose reference documentation is not
-  published publicly.
+description: DRINKOTEC is a Swiss beverage technology company headquartered in Nyon, Vaud, that designs,
+  builds and services connected beverage dispensing systems and the software that runs them. Its hardware
+  line covers all-in-one and modern postmix dispensers (NEO, VISION PX), compact premix dispensing (DRAFTER),
+  cocktails and blends (MANHATTAN), self-service walls, contactless payment (BEVPAY), beer and wine counting
+  and control (LEVELUP, BEERMAX), automatic keg switching, cellar cooling monitoring and water fountains.
+  LOOP360, its cloud beverage productivity and analytics platform, connects dispensed beverages to a central
+  system and is marketed as integrating with ERP and CRM platforms. DRINKOTEC sells into breweries, bars,
+  pubs, nightclubs, restaurants, hotels, festivals, sports arenas, cruise ships, offices, schools and
+  healthcare, and markets a RESTful DRINKOTEC API for third-party integration whose reference documentation
+  is not published publicly.
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 specificationVersion: '0.23'
 x-enrichment:
   date: '2026-09-06'
@@ -97,21 +100,20 @@ x-enrichment:
 x-coverage:
   state: gated
   reason: sales-gate
-  detail: >-
-    DRINKOTEC's own API page states that "a complete reference documentation is available
-    and includes every endpoint, attribute and supported method", but publishes no link to
-    it and no base URL — the page's only call to action is a "MEET OUR SOFTWARE ENGINEERS"
-    button pointing at a form to book a visit or callback at the Nyon office, so the
-    contract sits behind a sales conversation rather than a URL.
+  detail: DRINKOTEC's own API page states that "a complete reference documentation is available and includes
+    every endpoint, attribute and supported method", but publishes no link to it and no base URL — the
+    page's only call to action is a "MEET OUR SOFTWARE ENGINEERS" button pointing at a form to book a
+    visit or callback at the Nyon office, so the contract sits behind a sales conversation rather than
+    a URL.
   evidence:
-    - url: 'https://drinkotec.ch/drinkotec-api/'
-      status: 503
-    - url: 'http://web.archive.org/web/20260419112516id_/https://drinkotec.ch/drinkotec-api/'
-      status: 200
-    - url: 'https://api.drinkotec.ch/openapi.json'
-      status: 404
-    - url: 'https://api.drinkotec.ch/.well-known/agent-card.json'
-      status: 404
-    - url: 'https://info.drinkotec.ch/en/blog'
-      status: 200
+  - url: https://drinkotec.ch/drinkotec-api/
+    status: 503
+  - url: http://web.archive.org/web/20260419112516id_/https://drinkotec.ch/drinkotec-api/
+    status: 200
+  - url: https://api.drinkotec.ch/openapi.json
+    status: 404
+  - url: https://api.drinkotec.ch/.well-known/agent-card.json
+    status: 404
+  - url: https://info.drinkotec.ch/en/blog
+    status: 200
   checked: '2026-09-06'
