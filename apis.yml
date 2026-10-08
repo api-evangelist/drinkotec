@@ -1,6 +1,12 @@
 aid: drinkotec
 url: https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml
 common:
+- type: Plans
+  url: plans/drinkotec-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/drinkotec-rate-limits.yml
+- type: FinOps
+  url: finops/drinkotec-finops.yml
 - type: Website
   url: https://drinkotec.ch
 - type: DomainSecurity
