@@ -1,4 +1,4 @@
-# DRINKOTEC (drinkotec)
+# DRINKOTEC
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,43 +64,103 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-DRINKOTEC is a beverage technology company that specializes in creating innovative solutions for the production and packaging of beverages. They offer a range of equipment and services designed to streamline the beverage manufacturing process, from filling and sealing machines to labeling and packaging solutions. DRINKOTEC also provides consulting services to help companies optimize their production processes and improve efficiency. With their expertise in the beverage industry, DRINKOTEC helps businesses of all sizes create high-quality, cost-effective beverages that meet the demands of today's consumers.
+DRINKOTEC is a Swiss beverage technology company headquartered in Nyon, Vaud, that designs, builds and services connected beverage dispensing systems and the software that runs them. Its hardware line covers all-in-one and modern postmix dispensers (NEO, VISION PX), compact premix dispensing (DRAFTER), cocktails and blends (MANHATTAN), self-service walls, contactless payment (BEVPAY), beer and wine counting and control (LEVELUP, BEERMAX), automatic keg switching, cellar cooling monitoring and water fountains. LOOP360, its cloud beverage productivity and analytics platform, connects dispensed beverages to a central system and is marketed as integrating with ERP and CRM platforms. DRINKOTEC sells into breweries, bars, pubs, nightclubs, restaurants, hotels, festivals, sports arenas, cruise ships, offices, schools and healthcare, and markets a RESTful DRINKOTEC API for third-party integration whose reference documentation is not published publicly.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/drinkotec/refs/heads/main/apis.yml)
+**Areas:** Beverages · Beverage Dispensing · Hospitality · Point-of-Sale · IoT · Analytics · Payments
 
-## Scope
+## DRINKOTEC on APIs.io
 
-- **Type:** Index 
-- **Position:** Consumer 
-- **Access:** 3rd-Party 
+Everything profiled for DRINKOTEC is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/drinkotec/](https://apis.io/providers/drinkotec/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Beverages
+- [DRINKOTEC API](https://apis.io/apis/drinkotec/drinkotec/) — The DRINKOTEC API is the integration surface for DRINKOTEC's connected beverage dispensing systems and its LOOP360 beverage productivity platform, used to…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-03-01 
-- **Modified:** 2026-04-28 
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (2)
 
-### DRINKOTEC API
-DRINKOTEC API is a powerful tool that enables developers to integrate various drink-related functionalities into their applications. This API provides access to a wide range of features including recipe search, ingredient information, and even a database of popular cocktails. With DRINKOTEC API, developers can easily enhance their applications with valuable drink-related data, making it easier for users to discover new recipes, learn about different ingredients, and explore the world of mixology. Whether it's for a cooking app, a bartending guide, or a social networking platform, DRINKOTEC API offers a comprehensive solution for all drink-related needs.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://drinkotec.ch/drinkotec-api/](https://drinkotec.ch/drinkotec-api/)
+- [Drinkotec Authentication](https://apis.io/security/drinkotec/drinkotec-authentication/)
+- [Drinkotec Domain Security](https://apis.io/security/drinkotec/drinkotec-domain-security/)
 
+#### Plans and pricing (1)
 
-#### Tags:
+Published plans, tiers and prices.
 
- - Beverages
+- [Drinkotec Plans Pricing](https://apis.io/plans/drinkotec/drinkotec-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://drinkotec.ch/drinkotec-api/)
+Published request limits.
 
-## Maintainers
+- [Drinkotec Rate Limits](https://apis.io/rate-limits/drinkotec/drinkotec-rate-limits/)
 
-**FN:** Kin Lane
+#### FinOps (1)
 
-**Email:** kin@apievangelist.com
+What the API costs to run, by operation.
+
+- [Drinkotec Finops](https://apis.io/finops/drinkotec/drinkotec-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://drinkotec.ch)
+- [Blog](https://info.drinkotec.ch/en/blog)
+
+## API Evangelist rating
+
+**Kin Score 6.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.4** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/drinkotec/](https://apis.io/providers/drinkotec/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DRINKOTEC: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/drinkotec/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
